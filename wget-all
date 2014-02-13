@@ -1,0 +1,5 @@
+#!/bin/sh
+wget https://raw.githubusercontent.com/gilleswittenberg/dot-files/master/.bash_aliases
+wget https://raw.githubusercontent.com/gilleswittenberg/dot-files/master/.gitconfig
+wget https://raw.githubusercontent.com/gilleswittenberg/dot-files/master/.gitignore
+wget https://raw.githubusercontent.com/gilleswittenberg/dot-files/master/.vimrc

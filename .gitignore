@@ -1,0 +1,5 @@
+.DS\_Store
+*.sw?
+.vimrc
+.lvimrc
+npm-debug.log

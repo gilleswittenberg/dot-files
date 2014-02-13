@@ -1,0 +1,106 @@
+[user]
+	name = Gilles Wittenberg
+	email = mail@gilleswittenberg.com
+[alias]
+	s = status
+	l = log -10 --abbrev-commit --pretty=oneline --decorate=full --graph
+	ll = log --pretty=oneline --decorate=full --graph
+	lol = log -10 --pretty=oneline
+	w = whatchanged
+	d = diff
+	dh = diff HEAD^
+	dhh = diff HEAD^^
+	de = diff --ignore-space-at-eol
+	dc = diff --cached
+	dno = diff --name-only
+	dnoh = diff --name-only HEAD^
+	b = branch -a
+	bd = branch -d
+	bdel = branch -D
+	co = checkout
+	cob = checkout -b
+	com = checkout main
+	cod = checkout dev
+	cof = checkout --
+	cot = checkout --track
+	a = add --all :/
+	au = add -u
+	cm = commit -m
+	cam = commit -am
+	amend = commit --amend -C HEAD
+	aamend = commit -a --amend -C HEAD
+	m = merge
+	mm = merge main
+	md = merge dev
+	mt = mergetool
+	chp = cherry-pick
+	rs = reset --soft
+	rh = !"git clean -fd && git reset --hard "
+	rf = reset HEAD
+	rb = rebase
+	rbm = rebase main
+	rbc = rebase --continue
+	rba = rebase --abort
+	tl = tag -l -n
+	st = stash
+	stl = stash list
+	stc = stash clear
+	sta = stash apply stash@{0}
+	sm = submodule
+	sma = submodule add
+	smi = submodule init
+	smu = submodule update
+	cl = clone --recursive
+	p = push
+	pf = push -f
+	po = push origin
+	poh = push origin HEAD
+	ph = push homeserver
+	pfo = push -f origin
+	pom = push origin main
+	pfom = push -f origin main
+	f = fetch
+	pl = pull
+	plo = pull origin
+	plom = pull origin main
+	rmu = remote update
+	rmr = rm -r
+	pro = remote prune origin
+[core]
+	excludesfile = ~/.gitignore
+	whitespace = indent-with-non-tab,trailing-space,cr-at-eol,blank-at-eof
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+[color "branch"]
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "diff"]
+	meta = yellow bold
+	frag = magenta bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+[github]
+	user = gilleswittenberg
+[merge]
+	tool = vimdiff
+[http]
+	sslVerify = false
+[credential]
+	helper = osxkeychain
+[push]
+	autoSetupRemote = true
+[pull]
+	ff = only
+[init]
+	defaultBranch = main
