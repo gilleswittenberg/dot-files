@@ -19,7 +19,7 @@
 	bdel = branch -D
 	co = checkout
 	cob = checkout -b
-	com = checkout master
+	com = checkout main
 	cod = checkout dev
 	cof = checkout --
 	cot = checkout --track
@@ -30,7 +30,7 @@
 	amend = commit --amend -C HEAD
 	aamend = commit -a --amend -C HEAD
 	m = merge
-	mm = merge master
+	mm = merge main
 	md = merge dev
 	mt = mergetool
 	chp = cherry-pick
@@ -38,7 +38,7 @@
 	rh = !"git clean -fd && git reset --hard "
 	rf = reset HEAD
 	rb = rebase
-	rbm = rebase master
+	rbm = rebase main
 	rbc = rebase --continue
 	rba = rebase --abort
 	tl = tag -l -n
