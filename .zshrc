@@ -1,4 +1,4 @@
-# .bash_profile for Mac OS X
+# .zshrc for Mac OS
 
 # load aliases
 if [ -f ~/.bash_aliases ]; then
@@ -10,9 +10,4 @@ if [ -f ~/.bash_aliases_hostspecific ]; then
 fi
 
 # prompt display
-export PS1='\w$ '
-
-# terminal highlighting
-export CLICOLOR=1
-export LSCOLORS=CxFxCxDxFxegedabagacad
-
+PS1="%~ %# "
