@@ -5,8 +5,8 @@ if [ -f ~/.bash_aliases ]; then
 . ~/.bash_aliases
 fi
 
-if [ -f ~/.bash_aliases_hostspecific ]; then
-. ~/.bash_aliases_hostspecific
+if [ -f ~/.bash_aliases_host ]; then
+. ~/.bash_aliases_host
 fi
 
 # prompt display
