@@ -11,3 +11,7 @@ fi
 
 # prompt display
 PS1="%~ %# "
+
+# ls display
+export CLICOLOR=1
+export LSCOLORS=CxFxCxDxFxegedabagacad
