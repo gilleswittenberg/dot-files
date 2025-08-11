@@ -3,3 +3,5 @@
 .vimrc
 .lvimrc
 npm-debug.log
+.vscode
+.github
